@@ -4,22 +4,22 @@ interface SvgInlineProps {
   url: string
 }
 const RenderSvg = ({url}: SvgInlineProps) => {
-  const [svg, setSvg] = useState('');
+  const [svgFile, setSvgFile] = useState('');
   const [isLoaded, setIsLoaded] = useState(false);
-  const [isErrored, setIsErrored] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   useEffect(() => {
     fetch(url)
       .then(res => res.text())
-      .then(setSvg)
-      .catch(setIsErrored)
+      .then(setSvgFile)
+      .catch(setIsError)
       .then(() => setIsLoaded(true))
   }, [url]);
 
   return (
     <div 
-      className={`svgInline svgInline--${isLoaded ? 'loaded' : 'loading'} ${isErrored ? 'svgInline--errored' : ''}`}
-      dangerouslySetInnerHTML={{ __html: svg }}
+      className={`svgInline svgInline--${isLoaded ? 'loaded' : 'loading'} ${isError ? 'svgInline--errored' : ''}`}
+      dangerouslySetInnerHTML={{ __html: svgFile }}
     />
   );
 }
