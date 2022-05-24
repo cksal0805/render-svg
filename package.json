@@ -1,6 +1,6 @@
 {
   "name": "@yoondumbo/render-svg",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "svg rendering in react component",
   "main": "lib/index.js",
   "scripts": {
