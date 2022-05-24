@@ -1,12 +1,12 @@
 {
   "name": "@yoondumbo/render-svg",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "svg rendering in react component",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "publish": "npm run build && npm publish",
+    "publish:npm": "rm -rf dist && mkdir dist && babel src/lib -d dist --copy-files",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,9 +26,15 @@
   "bugs": {
     "url": "https://github.com/cksal0805/render-svg/issues"
   },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
   "homepage": "https://github.com/cksal0805/render-svg#readme",
   "devDependencies": {
     "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.0",
     "@babel/preset-react": "^7.17.12",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
