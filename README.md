@@ -2,6 +2,16 @@
 
 This library helps you render svg in a react.
 
+### install
+```
+npm i @yoondumbo/render-svg
+```
+or
+
+```
+yarn add @yoondumbo/render-svg
+```
+
 ### example
 ```tsx
 import React from 'react';
@@ -14,8 +24,10 @@ function Example() {
   )
 }
 ```
+#### or
 
-or
+DivertedImageRendering is available if the image extension is not svg.
+This package helps you render generic img elements if they are not svg
 
 ```tsx
 import React from 'react';
