@@ -1,5 +1,5 @@
-import React from 'react'
-import RenderSvg from './RenderSvg'
+import React from 'react';
+import RenderSvg from './RenderSvg';
 
 interface DivertedImageRenderingProps {
   url: string
