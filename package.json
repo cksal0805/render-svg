@@ -1,8 +1,8 @@
 {
   "name": "@yoondumbo/render-svg",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "svg rendering in react component",
-  "main": "lib/index.js",
+  "main": "src/lib/index.ts",
   "scripts": {
     "build": "tsc",
     "publish": "npm run build && npm publish",
