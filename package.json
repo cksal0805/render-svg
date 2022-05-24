@@ -1,6 +1,6 @@
 {
   "name": "@yoondumbo/render-svg",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "svg rendering in react component",
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/cksal0805/render-svg.git"
   },
-  "keywords": ["react", "svg", "version"],
+  "keywords": [
+    "react",
+    "svg",
+    "version"
+  ],
   "author": {
     "name": "yoondumbo",
     "email": "cksal5911@naver.com"
