@@ -36,7 +36,7 @@ import { DivertedImageRendering } from '@yoondumbo/render-svg';
 function Example() {
   const urls = ["s3:sample/sample.png", "s3:sample/sample.svg"]
   return urls.map((_, img) => (
-    <DivertedImageRendering url={img} />
+    <DivertedImageRendering url={img} key={img} />
   ))
 }
 ```
